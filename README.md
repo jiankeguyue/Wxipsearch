@@ -49,11 +49,11 @@ https://weixin.sogou.com/
 
 搜索出相关信息之后才能填入cookie
 
-往往回显页面
+在相关页面搜索往往会回显如下
 
 ![image-20240410115946111](https://gitee.com/yuejinjianke/tuchuang/raw/master/image/image-20240410115946111.png)
 
-把param的type值改为1后，往往会有回显内容
+把param的type值改为1后，往往会有回显内容（如果不行就重复来几次，即可刷新）
 
 ![image-20240410115935928](https://gitee.com/yuejinjianke/tuchuang/raw/master/image/image-20240410115935928.png)
 
@@ -79,6 +79,14 @@ python .\wxipsearch.py queryDomainIp -f xx.txt -o xx.csv
 ![image-20240410120229104](https://gitee.com/yuejinjianke/tuchuang/raw/master/image/image-20240410120229104.png)
 
 -r参数默认不开启，但开启后查询会更加精确，同时也需要在目录下放入google浏览器对应版本的selenium，我这里提供了最新123.x版本的内核。
+
+```
+python .\wxipsearch.py queryDomainIp -f 1.txt -o 1.csv -r
+```
+
+![image-20240410122117574](https://gitee.com/yuejinjianke/tuchuang/raw/master/image/image-20240410122117574.png)
+
+
 
 关于如何寻找对应版本，参考文章
 
