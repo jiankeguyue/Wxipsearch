@@ -2,6 +2,7 @@ import argparse
 import time
 import sys
 from parse.font import blue, bold, red
+from utils.validateparse import validateOptions
 import os
 
 def parseArgs():
@@ -26,6 +27,7 @@ def parseArgs():
 
 
     argsObj = parser.parse_args()
+    validateOptions(argsObj)
     # if not argsObj.target and not argsObj.file:
     #     print(red('\n[x] 用法:python ipInfoSearch.py [-t 目标IP/域名] [-f 含多个目标的文件] [-r 权重最小值] [-icp 备案查询] [-o 输出文件]\n\n[-] 举例:python ipInfoSearch.py -t 127.0.0.1 -r 1 -icp '))
     #     sys.exit()
